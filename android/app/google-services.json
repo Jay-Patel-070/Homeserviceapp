@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "253927693156",
+    "firebase_url": "https://jayshomeserviceapp-default-rtdb.firebaseio.com",
+    "project_id": "jayshomeserviceapp",
+    "storage_bucket": "jayshomeserviceapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253927693156:android:8a57f22ba74a7fa0bb7871",
+        "android_client_info": {
+          "package_name": "com.example.jayshomeserviceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoVxQphQapf-LSBiYDnOmJt_SiGSw4uNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
