@@ -49,7 +49,7 @@ class _RegisterPageState extends State<RegisterPage> {
         title: Text('Register', style: GoogleFonts.poppins(fontSize: 20, fontWeight: FontWeight.w500),),
       ),
       body: _isLoading
-          ? CircularProgressIndicator()
+          ? Center(child: CircularProgressIndicator())
           : Form(
           key: _formKey,
           child: SingleChildScrollView(

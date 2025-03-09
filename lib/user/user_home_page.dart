@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:jayshomeserviceapp/provider/provider_list.dart';
+import 'package:jayshomeserviceapp/user/User_profile.dart';
 import 'package:jayshomeserviceapp/user/chat_list_page.dart';
 import 'package:jayshomeserviceapp/booking_page.dart';
 
@@ -18,6 +19,7 @@ class _UserHomePageState extends State<UserHomePage> {
     ProviderListPage(),
     ChatListPage(),
     BookingsPage(),
+    UserProfilePage()
   ];
 
   void _onItmTapped(int index) {
@@ -55,8 +57,9 @@ class _UserHomePageState extends State<UserHomePage> {
       child: Scaffold(
         body: _children.elementAt(_selectedIndex),
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Color(0xff0064FA),
+          type: BottomNavigationBarType.fixed,
           unselectedItemColor: Color(0xffBEBEBE),
+          backgroundColor: Color(0xff0064FA),
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
                 icon: Icon(
@@ -70,9 +73,14 @@ class _UserHomePageState extends State<UserHomePage> {
                 label: 'Chat'),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.person,
+                  Icons.book_online,
                 ),
                 label: 'Bookings'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person,
+                ),
+                label: 'Profile'),
           ],
           currentIndex: _selectedIndex,
           selectedItemColor: Colors.white,

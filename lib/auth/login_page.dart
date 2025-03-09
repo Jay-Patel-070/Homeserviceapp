@@ -32,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
       },
       child: Scaffold(
         body: _isLoading
-            ? CircularProgressIndicator()
+            ? Center(child: CircularProgressIndicator())
             : Form(
           key: _formKey,
           child: Padding(

@@ -18,7 +18,7 @@ class _ProviderHomePageState extends State<ProviderHomePage> {
   final List<Widget> _children = [
     ProviderRequestsPage(),
     ProviderChatlistPage(),
-    ProviderProfile(),
+    ProviderProfilePage(),
   ];
 
   void _onItmTapped(int index) {

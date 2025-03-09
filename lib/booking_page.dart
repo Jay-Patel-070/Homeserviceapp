@@ -52,20 +52,12 @@ class _BookingsPageState extends State<BookingsPage> {
     }
   }
 
-  void _logout() async {
-    await _auth.signOut();
-    Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => LoginPage()),
-            (Route<dynamic> route) => false);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text('Bookings'),
-        actions: [IconButton(onPressed: _logout, icon: Icon(Icons.logout))],
       ),
       body: _isLoading
           ? Center(child: CircularProgressIndicator())
